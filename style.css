@@ -1,0 +1,107 @@
+@font-face {
+    font-family: myFirstFont;
+    src: url("https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap");
+  }
+
+body{
+    background-color:#e0e8ff ;
+    background-image: url("./order-summary-component-main/images/pattern-background-desktop.svg");
+    background-repeat: no-repeat;
+    background-size:contain ;
+    display: flex;
+    height: 100vh;
+    align-items: center;
+
+}
+
+.card-container {
+    width: 450px;
+    height: 700px;
+    margin: auto;
+    border-radius: 11px;
+    font-family: "myFirstFont", sans-serif;
+    background-color: white;
+}
+img {
+    border-top-left-radius: 11px;
+    border-top-right-radius: 11px;
+}
+.main-information-container {
+    text-align: center;
+}
+.main-information-container h1{
+    color: #1d2c4d;
+}
+.main-information-container p{
+    color: #9193a8;
+    font-size: 20px;
+    line-height: 32px;
+}
+.price-container {
+    width: 355px;
+    height: 100px;
+    background-color:#f8f9fe ;
+    margin: auto;
+    border-radius: 7px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    line-height: 5px;
+}
+.price-container img {
+   width: 66px;
+   height: 66px;
+}
+.price-container h2 {
+    color: #1d2c4d;
+
+ }
+ .price-container span {
+    color: #9193a8;
+
+ }
+ .price-container button {
+cursor: pointer;
+background: transparent;
+border: none;
+color: #766cf1;
+font-size: 1rem;
+font-weight: bold;
+ }
+ .payment-button-container{
+    width: 355px;
+    margin: auto;
+ }
+ .payment-button-container button {
+    width: 100%;
+    background-color: #382ae1;
+    color: white;
+    border: none;
+    cursor: pointer;
+    padding: 1em 0em;
+    font-size: 20px;
+    border-radius: 0.5rem;
+    margin-top: 33px;
+    box-shadow: 5px 15px 12px 0px rgba(226,223,250,0.75);
+-webkit-box-shadow: 5px 15px 12px 0px rgba(226,223,250,0.75);
+-moz-box-shadow: 5px 15px 12px 0px rgba(226,223,250,0.75);
+}
+button.cancel-order{
+    margin-left: 35%;
+    margin-top: 1em;
+    background: transparent;
+    border: none;
+    font-size: 15px;
+    font-weight: bold;
+    cursor: pointer;
+    color: grey;
+}
+.payment-button-container button:active {
+    background-color: #766cf1;
+}
+button.cancel-order:active{
+    color: #1d2c4d;
+}
+.price-container button:active{
+    text-decoration: underline;
+}
